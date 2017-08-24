@@ -1,0 +1,9 @@
+{
+  "name": "angular-smart-bootstrap",
+  "version": "1.0.0",
+  "description": "Angular bootstrap",
+  "main": "index.js",
+  "repository": "https://github.com/buldovsky/angular-smart-bootstrap",
+  "author": "Max Buldovsky",
+  "license": "MIT"
+}
