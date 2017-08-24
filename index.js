@@ -1,15 +1,22 @@
-
 /**
  *
- * Это нужно перенести в отдельный проект на github
+ * Angular Smart Bootstrap
+ * @autor Max Buldovsky
  *
  */
-define('angular-smart-bootstrap', ['angular','jquery'], function(angular){
+(function( factory ) {
+    if ( typeof define === "function" && define.amd ) {
+	// AMD. Register as an anonymous module.
+	define([ "angular", "jquery" ], factory );
+    } else {
+	// Browser globals
+	factory( angular, jQuery );
+    }
+}(function( angular, $ ) {
 
     var d = $.Deferred()
     var appId = 'myApp'
-    var app //= angular.module(appId, []);
-    var injector
+    var app, injector
     // программа для отложенной компиляции
     var delay = false
     // функция компиляции
@@ -29,9 +36,9 @@ define('angular-smart-bootstrap', ['angular','jquery'], function(angular){
         
     }
     
-	/**
+    /**
      *
-     * Возвращаем крутую функцию через которую можно управлять модулем ангуляра
+     * Возвращаем функцию через которую можно управлять модулем ангуляра
      *
      */
     return function(arg){
@@ -92,7 +99,6 @@ define('angular-smart-bootstrap', ['angular','jquery'], function(angular){
         });
         
         return app
-        
     }
 
-})
+}));
