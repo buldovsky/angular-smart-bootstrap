@@ -1,12 +1,12 @@
 {
   "name": "angular-smart-bootstrap",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Angular bootstrap",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buldovsky/angular-smart-bootstrap.git"
-  },  
+  },
   "author": "Max Buldovsky",
   "dependencies": {
     "angular": "^1.0.0",
