@@ -6,11 +6,11 @@
  */
 (function( factory ) {
     if ( typeof define === "function" && define.amd ) {
-	// AMD. Register as an anonymous module.
-	define([ "angular", "jquery" ], factory );
+    // AMD. Register as an anonymous module.
+    define([ "angular", "jquery" ], factory );
     } else {
-	// Browser globals
-	factory( angular, jQuery );
+    // Browser globals
+    factory( angular, jQuery );
     }
 }(function( angular, $ ) {
 
@@ -41,7 +41,7 @@
      * Возвращаем функцию через которую можно управлять модулем ангуляра
      *
      */
-    return function(arg){
+    angular.Module = function(arg){
 
         // откладываем перекомпиляцию
         if(arg === false) {
@@ -52,6 +52,7 @@
         if($.isArray(arg)) {
 
             if(!app) app = angular.module(appId, arg);
+            else app.requires = app.requires.concat(arg)
             return app
         }
         
