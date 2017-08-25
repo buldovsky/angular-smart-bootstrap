@@ -8,5 +8,9 @@
     "url": "git+https://github.com/buldovsky/angular-smart-bootstrap.git"
   },  
   "author": "Max Buldovsky",
+  "dependencies": {
+    "angular": "^1.0.0",
+    "jquery": "^3.0.0"
+  },
   "license": "MIT"
 }
